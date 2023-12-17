@@ -970,7 +970,7 @@ margin-bottom: 4px;
   gap: 72px 24px;
 }
 .benefits-parts {
-  width: calc((100% - 24px) / 2);
+  width: 100%;
 }
 .benefits-title {
   text-align: left;
@@ -985,7 +985,7 @@ margin-bottom: 4px;
   gap: 72px 24px;
 }
 .portfolio-card {
-  width: calc((100% - 24px) / 2);
+  width: 100%;
 }
 /* footer */
 .footer-container {
