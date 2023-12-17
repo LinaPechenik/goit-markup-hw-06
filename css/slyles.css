@@ -254,7 +254,9 @@ button {
   letter-spacing: 0.32px;
   font-weight: 500;
 }
-
+.benefits-parts {
+  width: 100%;
+}
 
 /*section 2*/
 /*.section-title {
@@ -970,6 +972,9 @@ margin-bottom: 4px;
   gap: 72px 24px;
 }
 .benefits-parts {
+  width: calc((100% - 24px) / 2);
+}
+.benefits-parts {
   width: 100%;
 }
 .benefits-title {
@@ -984,8 +989,9 @@ margin-bottom: 4px;
 .list-portfolio {
   gap: 72px 24px;
 }
+
 .portfolio-card {
-  width: 100%;
+  width: 100% ;
 }
 /* footer */
 .footer-container {
