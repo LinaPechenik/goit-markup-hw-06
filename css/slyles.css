@@ -206,7 +206,54 @@ button {
   background-color: var(--pressed-state);
 }
 
+/*section 1*/
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 72px;
+  flex-wrap: wrap;
+}
+.benefits-icon-block{
+  position: relative;
+  background-color: #F4F4FD;
+  margin-bottom: 8px;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  max-width: 264px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.benefits-title {
+  color: #2E2F42;
+  font-size: 36px;
+  line-height: 111.111%;
+  letter-spacing: 0.72px;
+  margin-bottom: 8px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.benefits-text {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  font-weight: 500;
+}
 
 
 
