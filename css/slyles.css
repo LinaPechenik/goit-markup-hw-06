@@ -824,6 +824,24 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
     padding-left: 16px;
     padding-right: 16px;
     }
+    /*------header-------*/
+    .header-container {
+      justify-content: space-between;
+    }
+    .page-navigation {
+      display: flex;
+    }
+    .logo-header {
+      margin-right: 120px;
+    }
+    .contacts {
+      display: block;
+    }
+    .contacts-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
 
     /*--------------------hero----------------------*/
     .hero-section {
@@ -840,13 +858,57 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
           }
       }
       .main-title {
+        max-width: 496px;
         letter-spacing: 1.12px;
         line-height: 107.143%;
         font-size: 56px;
         margin-bottom: 36px;
-        max-width: 496px;
     }
 }
+
+.benefits-list {
+  gap: 72px 24px;
+}
+.benefits-parts {
+  width: calc((100% - 24px) / 2);
+}
+.benefits-title {
+  text-align: left;
+  
+}
+
+.team-list {
+  gap: 64px 24px;
+}
+/* portfolio section */
+.list-portfolio {
+  gap: 72px 24px;
+}
+.portfolio-card {
+  width: calc((100% - 24px) / 2);
+}
+/* footer */
+.footer-container {
+  gap: 72px 24px;
+  width: 584px;
+}
+  .logo-footer {
+      display: inline-block;
+      text-align: left;
+  }
+  .footer-soc {
+      margin: initial;
+  }
+  .footer-title {
+      text-align: left;
+  }
+  .footer-form {
+      gap: 24px;
+  }
+  .footer-form-title {
+      text-align-last: left;
+  }
+
 /*=================================DESCTOP============================*/
 @media screen and (min-width: 1158px) {
   .section {
@@ -858,7 +920,24 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
     padding-left: 15px;
     padding-right: 15px;
 }
-
+/*-------------header------------*/
+.logo-header {
+  margin-right: 76px;
+}
+.contacts {
+  margin-left: auto;
+}
+.contacts-list {
+  gap: 40px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.contacts-link {
+  padding: 24px 0;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+}
 /*-----------hero---------*/
 .hero-section {
   padding-top: 188px;
@@ -873,5 +952,67 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 .main-title {
   margin-bottom: 48px;
 }
+
+.benefits-list {
+  flex-wrap: nowrap;
 }
+.benefits-parts {
+  width: calc((100% - 72px) / 4);
+}
+.benefits-icon-block {
+  display: flex;
+}
+.benefits-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+  text-transform: none;
+}
+.benefits-text {
+  font-weight: 400;
+}
+/* team section */
+.team-list {
+  gap: 24px;
+}
+.team-picture {
+  width: calc((100% - 72px) / 4);
+}
+/* portfolio section */
+.list-portfolio {
+  gap: 48px 24px;
+}
+.portfolio-card {
+  flex-shrink: 0;
+  width: calc((100% - 48px) / 3);
+}
+/* footer */
+.footer-container {
+  flex-wrap: nowrap;
+  gap: 0;
+  width: auto;
+}
+.footer-logo-container {
+  margin-right: 120px;
+  display: block;
+}
+.footer-text {
+  max-width: 264px;
+}
+.footer-soc {
+  margin-right: 80px;
+}
+.footer-form {
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+  .footer-email {
+      width: 264px;
+  }
+  .footer-email::placeholder {
+      opacity: 1;
+  }
+}
+
 
