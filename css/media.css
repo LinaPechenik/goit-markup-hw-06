@@ -29,7 +29,7 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 
@@ -217,4 +217,541 @@ body {
         line-height: 1.5;
     }
 }
-/* /Desktop styles header */
+
+
+
+
+/*============================================= HERO ============================================*/
+
+/*---------------------------------------- Phone - hero ----------------------------------------*/
+.hero-section {
+    margin-right: auto;
+    margin-left: auto;
+    background: #2e2f42;
+    padding: 72px 0;
+    background-size: cover;
+    background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url("../images/background-mob.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-title {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 216px;
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 320px) {
+.hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url("../images/background-mob@x2.jpg");
+    }
+}
+
+.hero-btn {
+    background: #4d5ae5;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    margin: auto;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    min-width: 169px;
+    height: 56px;
+    display: block;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #404bbf;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/*---------------------------------------- Tablet - hero ----------------------------------------*/
+@media screen and (min-width: 768px) {
+.hero-section { 
+    background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/background-tablet.jpg");
+    padding: 112px 0;
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+.hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url("../images/background-tablet@x2.jpg");
+}
+}
+
+.hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07143;
+        }
+
+}
+
+
+
+/*---------------------------------------- Desktop - hero ----------------------------------------*/
+@media screen and (min-width: 1158px) {
+.hero-section {
+    max-width: 1440px;
+    background-position: center;
+    background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/background.jpg");
+    padding: 188px 0;
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+.hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url("../images/background@x2.jpg");
+}
+}
+
+.hero-title {
+    margin-bottom: 48px;
+    }
+}
+
+
+
+
+
+
+
+/*============================================= BENEFITS =========================================*/
+
+/*---------------------------------------- Phone - benefits ----------------------------------------*/
+.benefits-section {
+    padding: 96px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.benefits-subtitle {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+
+.benefits-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.benefits-icon-container {
+    max-width: 288px;
+    display: none;
+}
+
+.benefits-icon {
+    display: none;
+}
+
+.benefits-item {
+    width: 100%;
+}
+
+
+/*---------------------------------------- Tablet - benefits --------------------------------------*/
+@media screen and (min-width: 768px) {
+.benefits-section {
+    padding: 96px 0;
+}
+
+.benefits-list {
+    gap: 24px;
+    row-gap: 72px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.benefits-item {
+    width: calc((100% - 48px) / 2);
+}
+
+.benefits-subtitle {
+    text-align: left;
+}
+}
+
+
+
+/*-------------------------------------- Desktop - benefits --------------------------------------*/
+@media screen and (min-width: 1158px) {
+.benefits-section {
+    padding: 120px 0;
+}
+
+.benefits-list {
+    gap: 24px;
+}
+
+.benefits-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.benefits-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.benefits-text {
+    font-weight: 400;
+}
+
+.benefits-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(142, 143, 153);
+    border-radius: 4px;
+    background-color: #f4f4fd;
+}
+
+.benefits-icon {
+    display: block;
+}
+}
+
+
+
+
+
+/*============================================= TEAM =========================================*/
+
+/*-------------------------------------- Phone - team --------------------------------------*/
+.employer {
+    padding: 32px 16px;   
+}
+
+.team-section {
+    padding-bottom: 24px;
+    padding-top: 96px;
+    background: #f4f4fd;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-item {
+    margin-bottom: 72px;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-soc-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.team-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: #404bbf;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.team-content {
+    padding: 32px 0;
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+}
+
+.team-soc-icon {
+    fill: #f4f4fd;
+}
+
+.team-soc-icon:hover,
+.team-soc-icon:focus {
+    background-color: #31d0aa;
+}
+
+.team-item {
+    width: 100%;
+}
+img {
+    width: 100%;
+}
+
+
+/*-------------------------------------- Tablet - team --------------------------------------*/
+@media screen and (min-width: 768px) {
+.team-section {
+    padding: 96px;
+}
+
+.team-list {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+}
+.team-item {
+    width: calc((100% - 48px) / 2);
+}
+img {
+    width: 100%;
+}
+}
+
+
+
+/*-------------------------------------- Desktop - team --------------------------------------*/
+@media screen and (min-width: 1158px) {
+.team-section {
+    padding: 120px 0;
+}
+.team-item {
+    width: calc((100% - 88px) / 4);
+}
+}
+
+
+
+
+
+/*============================================= PORTFOLIO =========================================*/
+
+
+/*---------------------------------- Phone - portfolio ----------------------------------*/
+.portfolio-section {
+    padding-bottom: 96px;
+    padding-top: 96px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.portfolio-title {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2e2f42;
+}
+
+.portfolio-item {
+    margin-bottom: 48px;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-cover-text {
+    display: none;
+}
+
+.portfolio-content {
+    padding: 32px 16px;
+    border-top: none;
+    border: 1px solid #e7e9fc;
+}
+
+.portfolio-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+.portfolio-item {
+    width: 100%;
+}
+
+
+/*---------------------------------- Portfolio - tablet ----------------------------------*/
+@media screen and (min-width: 768px) { 
+.portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+}
+.portfolio-item {
+    width: calc((100% - 48px) / 2);
+}
+}
+
+
+/*---------------------------------- Desktop - portfolio ----------------------------------*/
+@media screen and (min-width: 1158px) {
+.portfolio-section {
+    padding: 120px 0;
+}
+
+.portfolio-list {
+    row-gap: 48px;
+}
+
+.portfolio-cover-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+}   
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+                0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+                0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+        
+.portfolio-item:hover .portfolio-cover-text,
+.portfolio-item:focus .portfolio-cover-text {
+    transform: translateY(0%);
+} 
+
+.portfolio-cover-text {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #4d5ae5;
+    color: #f4f4fd;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
+}
+    
+}
+
+
+
+
+
+
+/*============================================= FOOTER =========================================*/
+
+
+
+
+
+
+
+
+/*============================================= MODAL =========================================*/
