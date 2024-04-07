@@ -741,7 +741,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .footer-logo {
@@ -825,6 +825,9 @@ img {
   margin-bottom: 16px;
 }
 
+.footer-subscribe-form {
+  flex-direction: column;
+}
 .footer-email {
   width: 264px;
   height: 40px;
@@ -875,7 +878,7 @@ img {
 }
 
 .footer-subscribe-icon {
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 /*---------------------------------- Footer - tablet ----------------------------------*/
@@ -884,6 +887,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    width: 584px;
   }
 
   .footer-logo {
@@ -894,7 +898,7 @@ img {
   .footer-logo-container {
     width: 264px;
     margin-right: 24px;
-    margin-left: 96px;
+    /* margin-left: 96px; */
   }
 
   .footer-soc {
@@ -908,7 +912,7 @@ img {
   }
 
   .footer-subscribe {
-    margin-left: 96px;
+    /* margin-left: 96px; */
   }
 
   .footer-subscribe-title {
@@ -927,6 +931,9 @@ img {
   .footer-section {
     padding: 100px 0;
   }
+  .footer-section .footer {
+    width: 1158px;
+  }
 
   .footer-logo {
     margin-right: 120px;
@@ -940,7 +947,7 @@ img {
 
   .footer-subscribe-form {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 16px;
   }
 

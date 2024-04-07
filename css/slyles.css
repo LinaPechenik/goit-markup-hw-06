@@ -150,14 +150,14 @@ body {
 }
 
 .studio-page {
-  display: block;
+  /* display: block;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: none;
+  text-decoration: none; */
 }
 
 .current {
@@ -462,14 +462,14 @@ body {
 /*------------------------------------------- FOOTER ----------------------------------------*/
 
 .footer-section {
-  background-color: #2e2f42;
+  /* background-color: #2e2f42;
   padding: 100px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   justify-content: center;
-  align-items: baseline;
+  align-items: baseline; */
 }
 .footer {
   display: flex;
@@ -477,7 +477,7 @@ body {
 }
 
 .footer-logo-container {
-  margin-right: 120px;
+  /* margin-right: 120px; */
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -502,7 +502,7 @@ body {
 }
 
 .footer-soc {
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 .footer-soc-title {
   font-size: 16px;
@@ -552,14 +552,14 @@ body {
 }
 .footer-subscribe-title {
   font-family: Roboto;
-  font-size: 16px;
+  /* font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
 
-  display: inline-block;
+  display: inline-block; */
 }
 .footer-subscribe-form {
   display: flex;
